@@ -1,0 +1,159 @@
+
+
+
+/* https://umich.instructure.com/courses/504783/modules/items/2232265
+
+.container{
+    display: flex | inline-flex;
+       flex-direction: row | row-reverse | column | column-reverse;
+   flex-wrap: nowrap | wrap | wrap-reverse;
+   flex-flow: <flex-direction> || <flex-wrap>;
+} */
+
+body{
+    font-family: 'Poppins', serif;
+    background: url("../images/concrete_seamless.png") #f1f1f1;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a:visited {
+    color: #0000EE;
+}
+ 
+
+div .card > header{
+    padding: 20px 0px 20px 0px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: #288088;
+    border: solid 2px #45ADAD;
+}
+
+div.card{
+    /* flex: 0 0 450px; */
+    /* flex-grow:1; */
+    flex-basis: 450px;
+    height:fit-content;
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+div.pricing{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center;
+    align-content: center;
+    justify-content: center; */
+} 
+
+.gallery img{
+    border: solid 10px #50C7C7;
+    margin: 10px;
+    width: 300px;
+}
+
+.gallery{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+/* #logo {
+    animation: mymove 5s ease-in-out;
+}
+
+@keyframes mymove {
+    0% {width: 25px; opacity: 0;}
+    100% {width: 475px; opacity: 1;}
+} */
+
+
+/* Requirements 12-14: */
+@media screen and (min-width: 900px){
+    header{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: space-between;
+        
+    }
+
+    body > header {
+        position: sticky;
+        top: 0;
+    }
+    
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+    
+    }
+
+    div.card{
+        /* flex: 0 0 450px; */
+        /* flex-grow:1; */
+        flex-basis: 250px;
+        
+    }
+}
+
+/* Requirement 15: */
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    #logo {
+        animation: none;
+    }
+}
+
+@media print {
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: none;
+    }
+
+    nav {
+        width: 80%;
+    }
+    
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.pricing{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        /* align-items: center;
+        align-content: center;
+        justify-content: center; */
+    } 
+
+    .card {
+        border: solid 2px #45ADDD;
+        flex-basis: 325px;
+    }
+    
+
+  
+  }
+
