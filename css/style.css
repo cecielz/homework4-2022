@@ -141,18 +141,21 @@ div.pricing{
 
     div.pricing{
         display:flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: flex-end;
         /* align-items: center;
         align-content: center;
         justify-content: center; */
     } 
 
-    .card {
+    div.card {
         border: solid 2px #45ADDD;
         flex-basis: 325px;
     }
-    
+
+    #gallery, .gallery {
+        Display: none
+    }
 
   
   }
